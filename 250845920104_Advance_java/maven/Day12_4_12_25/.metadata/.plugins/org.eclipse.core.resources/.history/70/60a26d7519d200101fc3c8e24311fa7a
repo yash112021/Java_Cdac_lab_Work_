@@ -1,0 +1,18 @@
+package com.demo.bean;
+
+public class Address {
+	// data Memebers of the Addrees Classs
+	private String street;
+	private String city;
+	private String pincode;
+	
+	// default constructor 
+	public Address(String street, String city, String pincode) {
+		super();
+		this.street = street;
+		this.city = city;
+		this.pincode = pincode;
+	}
+	
+	
+}

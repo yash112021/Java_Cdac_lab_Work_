@@ -1,0 +1,9 @@
+package com.demo.bean;
+
+public class Faculty {
+	// data Members 
+	private int fid;
+	private String fname;
+	private Skill sk;
+	private Address add;
+}

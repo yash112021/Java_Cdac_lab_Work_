@@ -1,0 +1,8 @@
+package com.demo.bean;
+
+public class Address {
+	// data Memebers of the Addrees Classs
+	private String street;
+	private String city;
+	private String pincode;
+}

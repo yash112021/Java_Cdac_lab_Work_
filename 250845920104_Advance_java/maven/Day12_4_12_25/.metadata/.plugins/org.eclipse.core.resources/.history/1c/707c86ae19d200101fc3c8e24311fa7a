@@ -1,0 +1,20 @@
+package com.demo.bean;
+
+public class Faculty {
+	// data Members 
+	private int fid;
+	private String fname;
+	private Skill sk;
+	private Address add;
+	
+	// defalut constructor 
+	public Faculty(int fid, String fname, Skill sk, Address add) {
+		super();
+		this.fid = fid;
+		this.fname = fname;
+		this.sk = sk;
+		this.add = add;
+	}
+	
+	
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+  http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- calls default constructor of HelloWorld class -->
+<!-- Do the Mapping of the HelloWorld Class -->
+<bean id="h1" class="com.demo.bean.HelloWorld"></bean>
+
+<!-- now by SETTER INJECTION setting the Value of the Emplyee -->
+<bean id="emp1" class="com.demo.bean.Emplyee">
+	<property name="eid" value="112021"></property>
+	<property name="enmae" value="Yash Patil"></property>
+
+
+</bean>
+
+</beans>

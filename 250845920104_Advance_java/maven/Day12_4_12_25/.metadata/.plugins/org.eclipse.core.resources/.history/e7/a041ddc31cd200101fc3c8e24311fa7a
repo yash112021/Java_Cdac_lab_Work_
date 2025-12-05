@@ -1,0 +1,16 @@
+package com.demo.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.demo.bean.Faculty;
+
+public class TestingAutoWring {
+	// now we are going to test the AutoWring 
+	public static void main(String[] args) {
+		// making the object of the ApplicationContext
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("springconfig.xml");
+		// now getting the object of the Faculty
+		Faculty fa=(Faculty) ctx.getBean("faculty");
+	}
+}

@@ -1,0 +1,13 @@
+package com.demo.test;
+
+public class TestingHelloWorld {
+
+	
+
+	public static void main(String[] args) {
+		// now here testing the Hello World 
+		XmlBeanFactory beanfactory=new XmlBeanFactory(new ClassPathResources("helloWorld.xml"))
+
+	}
+
+}

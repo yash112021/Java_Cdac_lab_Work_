@@ -1,0 +1,20 @@
+package com.demo.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.demo.bean.HelloWorld;
+
+public class TestingHelloWorld {
+
+	
+
+	public static void main(String[] args) {
+		// now here testing the Hello World 
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("springconfig.xml");
+		HelloWorld ab=(HelloWorld) ctx.getBean("h1");
+		ab.sayHello();
+
+	}
+
+}

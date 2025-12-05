@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+  http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- calls default constructor of HelloWorld class -->
+<!-- Do the Mapping of the HelloWorld Class -->
+<bean id="h1" class="com.demo.bean.HelloWorld"></bean>
+
+<!-- now by SETTER INJECTION setting the Value of the Emplyee -->
+<bean id="emp1" class="com.demo.bean.Emlpyee">
+	<property name="eid" value="112021"></property>
+	<property name="ename" value="Yash Patil"></property>
+	<property name="sal" value="5000.00"></property>
+</bean>
+
+<!-- using the Constructor Injection for the Emplyee-->
+<bean id="emp2" class="com.demo.bean.Emlpyee">
+<constructor-arg  index="0" value="101"></constructor-arg>
+<constructor-arg index="1" value="Divya"></constructor-arg>
+<constructor-arg index="2" value="25000"></constructor-arg>
+</bean>
+
+<!-- now making the the bean for the address and then for the MyUSer settting the value  -->
+<bean id="add" class="com.demo.bean.Address">
+<property name="street" value="Diwg bhag"></property>
+<property name="city" value="Jalgaon"></property>
+<property name="pincode" value="42511"></property>
+</bean>
+
+<!-- another bean for the MyUser -->
+<bean id="usr" class="com.demo.bean.MyUser"> <!--  constructor injection using here  -->
+<constructor-arg index="0" value="112021"> </constructor-arg>
+<constructor-arg index="1" value="yashpatil"></constructor-arg>
+<constructor-arg index="2" value="yp9447005@gamil.com"></constructor-arg>
+<constructor-arg index="3" ref="add"></constructor-arg>  <!-- now here we are using the ref keyword -->
+</bean>
+
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+

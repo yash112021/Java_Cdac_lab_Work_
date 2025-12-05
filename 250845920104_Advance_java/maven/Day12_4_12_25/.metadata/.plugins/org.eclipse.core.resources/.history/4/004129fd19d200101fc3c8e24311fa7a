@@ -1,0 +1,15 @@
+package com.demo.bean;
+
+public class Skill {
+	// data Members 
+	private int sid;
+	private String skname;
+	private int experi;
+	
+	//default constructor 
+	public Skill() {
+		super();
+	}
+	
+	
+}
