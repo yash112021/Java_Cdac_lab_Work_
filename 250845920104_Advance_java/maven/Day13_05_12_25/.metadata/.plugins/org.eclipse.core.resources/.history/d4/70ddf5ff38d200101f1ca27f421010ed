@@ -1,0 +1,14 @@
+package com.demo.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+// now in this program we are going to pick the data from data.properties rather than setting from the Xml file
+public class TestAnnotationPlaceholder {
+	public static void main(String[] args) {
+		// making the applicatio context
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("springconfig.xml");
+		// get the object from the spring framework 
+		Product p=(Product) ctx.getBean("");
+	}
+}

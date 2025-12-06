@@ -1,0 +1,25 @@
+package com.demo.beans;
+
+public class MyUser {
+	// date Memeber 
+	private int uid;
+	private String unmae;
+	private String addr;
+	
+	// DEFAULT CONSTRUCTOR 
+	public MyUser() {
+		super();
+	}
+
+	// PARMAETERISED CONSTRUCTOR
+	public MyUser(int uid, String unmae, String addr) {
+		super();
+		this.uid = uid;
+		this.unmae = unmae;
+		this.addr = addr;
+	}
+	
+	
+	
+	
+}

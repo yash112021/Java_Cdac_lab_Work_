@@ -1,0 +1,87 @@
+package com.demo.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+/*IN THESE CONDITION THE BEAN IT  WILL BE THE CLASS NAME WITH PRODUCT(BUT THE P WILL BE SMALL)*/
+@Component 
+/* @Component("p1") now the p1 is the bean id here */
+public class Product {
+	// data Memeber 
+	@Value("${prod.pid}") //using the Expression Language type
+	private int pid;
+	@Value("${prod.pname}")
+	private String pname;
+	@Value("${prod.qty}")
+	private int qty;
+	@Value("${prod.price}")
+	private double price;
+	@Autowired
+	private Category categry;
+	
+	// parameterised constructor 
+	public Product() {
+		super();
+	}
+
+	// default constructor 
+	public Product(int pid, String pname, int qty, double price, Category categry) {
+		super();
+		this.pid = pid;
+		this.pname = pname;
+		this.qty = qty;
+		this.price = price;
+		this.categry = categry;
+	}
+
+	//getters and setters 
+	public int getPid() {
+		return pid;
+	}
+
+	public void setPid(int pid) {
+		this.pid = pid;
+	}
+
+	public String getPname() {
+		return pname;
+	}
+
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+
+	public int getQty() {
+		return qty;
+	}
+
+	public void setQty(int qty) {
+		this.qty = qty;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public Category getCategry() {
+		return categry;
+	}
+
+	public void setCategry(Category categry) {
+		this.categry = categry;
+	}
+
+	// TO STRING METHOD 
+	@Override
+	public String toString() {
+		return "Product [pid=" + pid + ", pname=" + pname + ", qty=" + qty + ", price=" + price + ", categry=" + categry
+				+ "]";
+	}
+	
+	
+}

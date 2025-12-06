@@ -1,0 +1,22 @@
+package com.demo.beans;
+
+public class Product {
+	// data Memeber 
+	private int pid;
+	private String pname;
+	private int qty;
+	private double price;
+	private Category categry;
+	
+	// default constructor 
+	public Product(int pid, String pname, int qty, double price, Category categry) {
+		super();
+		this.pid = pid;
+		this.pname = pname;
+		this.qty = qty;
+		this.price = price;
+		this.categry = categry;
+	}
+	
+	
+}

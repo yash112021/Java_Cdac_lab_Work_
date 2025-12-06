@@ -1,0 +1,9 @@
+package com.demo.test;
+
+public class TestPropertyFile {
+	public static void main(String[] args) {
+		//now picking up the data from the Data Properties  File
+		// creating the ApplicationContext
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("springconfig.xml");
+	}
+}

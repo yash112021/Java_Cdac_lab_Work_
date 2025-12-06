@@ -1,0 +1,26 @@
+package com.demo.beans;
+
+public class Category {
+	// date Members 
+	private int cid;
+	private String cname;
+	private String descr;
+	
+	// default constructor 
+	public Category() {
+		super();
+	}
+	
+	// parameterised constructor
+	public Category(int cid, String cname, String descr) {
+		super();
+		this.cid = cid;
+		this.cname = cname;
+		this.descr = descr;
+	}
+
+
+	
+	
+	
+}

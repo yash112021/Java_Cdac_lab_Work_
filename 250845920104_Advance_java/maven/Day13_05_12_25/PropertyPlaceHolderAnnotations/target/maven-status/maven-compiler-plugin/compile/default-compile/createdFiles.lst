@@ -1,0 +1,4 @@
+com\demo\beans\Product.class
+com\demo\beans\Category.class
+com\demo\config\TestAnnotationConfig.class
+com\demo\test\TestAnnotationPlaceholder.class
