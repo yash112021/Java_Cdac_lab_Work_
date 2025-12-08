@@ -1,0 +1,10 @@
+package com.demo.service;
+
+import org.springframework.stereotype.Service;
+
+// now we have create the object automatically by the spring framewok
+
+@Service
+public class ProductServiceImpl implements  ProductService {
+		
+}

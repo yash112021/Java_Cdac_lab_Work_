@@ -1,0 +1,25 @@
+package com.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.demo.beans.Product;
+import com.demo.dao.ProductDao;
+
+// now we have create the object automatically by the spring framewok
+
+@Service
+public class ProductServiceImpl implements  ProductService {
+
+	// making the object of the pdao of the product
+	@Autowired
+	ProductDao pdao;
+	
+	@Override
+	public List<Product> getAllProducts() {
+		return pdao.findAllProdcut();
+	}
+		
+}

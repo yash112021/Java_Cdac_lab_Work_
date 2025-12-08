@@ -1,0 +1,16 @@
+package com.demo.dao;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.demo.beans.MyUser;
+
+@Repository
+public class LoginDaoImpl implements LoginDao{
+
+	@Override
+	public MyUser valUser(String uname, String password) {
+	
+	}
+
+}

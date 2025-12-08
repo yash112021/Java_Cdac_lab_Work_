@@ -1,0 +1,26 @@
+package com.demo.dao;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.demo.beans.Product;
+
+@Repository
+public class ProductDaoImpl implements ProductDao{
+	
+	@Autowired
+	JdbcTemplate jdbcTem;
+
+	public List<Product> findAllProdcut() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	
+
+}

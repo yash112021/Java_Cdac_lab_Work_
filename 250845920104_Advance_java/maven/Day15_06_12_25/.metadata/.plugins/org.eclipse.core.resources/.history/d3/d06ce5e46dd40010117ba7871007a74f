@@ -1,0 +1,13 @@
+package com.demo.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class ProductDaoImpl implements ProductDao{
+
+	public void findAllProdcut() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
